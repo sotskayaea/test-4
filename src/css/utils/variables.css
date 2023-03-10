@@ -1,0 +1,40 @@
+:root {
+  /* Fonts */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+
+  /*  TXT color */
+  --logo-cl: #0e0e0e;
+
+  --main-txt-cl: #000000;
+  --secondary-txt-cl: #ffffff;
+
+  /* Input field color */
+  --input-label--normal: #5c5c5c;
+  --input-label-normal-border: #d7d7d7;
+  --input-label-focus: rgba(17, 17, 17, 0.7);
+  --input-label-error: #e74a3b;
+  --input-label-correct: #3cbc81;
+
+  --input-field-placeholder: rgba(17, 17, 17, 0.4);
+  --input-field-value: #111111;
+
+  /* Button color */
+  --btn-bgc-default: #e86f54;
+  --btn-bgc-hover: #e25b41;
+  --btn-bgc-focus: #fa6f54;
+  --btn-bgc-disabled: rgba(232, 111, 84, 0.4);
+
+  /* Mobile menu bgc*/
+  --mobile-menu-bgc: #e86f54;
+  /* Main bgc color page */
+  --main-bgc-page: #ffffff;
+  --secondary-bgc-page: #000000;
+
+  /* Card SET */
+  --ident: 16px;
+  --items: 2;
+
+  /* Other */
+  --transition-set: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

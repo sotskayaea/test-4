@@ -1,0 +1,10 @@
+/*  Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ident);
+}
+
+.items-set {
+  flex-basis: calc((100% - var(--ident) * (var(--items) - 1)) / var(--items));
+}

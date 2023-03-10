@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--secondary-txt-cl);
+
+  background-color: var(--btn-bgc-default);
+  border: transparent;
+}
+.btn:hover {
+  background-color: var(--btn-bgc-hover);
+}
+.btn:focus {
+  background-color: var(--btn-bgc-focus);
+}
+.btn:disabled {
+  background-color: var(--btn-bgc-disabled);
+}
