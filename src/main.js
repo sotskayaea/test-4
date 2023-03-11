@@ -1,0 +1,1 @@
+@import url('./components/section.css');
