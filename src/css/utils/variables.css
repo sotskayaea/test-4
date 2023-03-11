@@ -30,6 +30,7 @@
   /* Main bgc color page */
   --main-bgc-page: #ffffff;
   --secondary-bgc-page: #000000;
+  --backdrop-bgc: rgba(0, 0, 0, 0.3);
 
   /* Card SET */
   --ident: 16px;
