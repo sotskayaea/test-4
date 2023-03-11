@@ -40,11 +40,22 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-
+  display: block;
   margin-bottom: 14px;
 }
 .contact-modal-description {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
+  display: block;
+  margin-bottom: 18px;
+}
+.contact-input-wrapper {
+  position: relative;
+}
+.contact-modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
