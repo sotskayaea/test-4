@@ -1,5 +1,61 @@
-<section>
-  <div class="container container-follow">
-    <h2>Follow to our newsletter</h2>
+<div class="backdrop is-hidden" data-modal>
+  <div class="follow-modal">
+    <button class="follow-modal-close" data-modal-close>
+      <svg class="follow-modal-icon" width="16" height="16">
+        <use href="../img/follow/modal-close-icon.svg"></use>
+      </svg>
+    </button>
+    <div class="follow-modal-left">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/follow/follow-desk-1x.jpg 1x,
+            ../img/follow/follow-desk-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/follow/follow-tab-1x.jpg 1x,
+            ../img/follow/follow-tab-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ../img/follow/follow-mob-1x.jpg 1x,
+            ../img/follow/follow-mob-2x.jpg 2x
+          "
+        />
+        <img
+          src="../img/follow/follow-desk-1x.jpg"
+          alt="Букет квітів"
+          class="follow-modal-img"
+        />
+      </picture>
+    </div>
+    <div class="follow-modal-right">
+      <div class="follow-modal-descr">
+        <strong class="follow-modal-title"> Follow to our newsletter</strong>
+        <p class="follow-modal-text">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+      </div>
+      <form class="follow-modal-form">
+        <label class="follow-modal-label">
+          Email
+          <input
+            type="email"
+            class="follow-modal-input"
+            placeholder="Your email"
+          />
+        </label>
+        <button class="follow-modal-btn btn" type="submit" data-modal-submit>
+          Subscribe
+        </button>
+      </form>
+    </div>
   </div>
-</section>
+</div>
