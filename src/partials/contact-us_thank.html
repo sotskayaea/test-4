@@ -19,37 +19,45 @@
         before you make an order please fill in your contact details. We will
         call you back.
       </p>
-      <label class="contact-group-field">
-        <span class="contact-modal-lable">Name</span>
-        <span class="contact-input-wrapper">
-          <input
-            type="text"
-            class="modal-input"
-            name="modal-user-name"
-            required
-          />
-          <svg class="contact-modal-icon" width="20" height="20">
-            <use href="../img/icons.svg#icon-facebook"></use>
-          </svg>
-        </span>
-      </label>
+      <div class="contact-field-wrapper">
+        <label class="contact-group-field">
+          <span class="contact-input-wrapper">
+            <input
+              type="text"
+              class="contact-modal-input"
+              name="modal-user-name"
+              required
+              pattern="^[А-Яа-яЁё\s]+$"
+              placeholder="Your name"
+            />
+            <span class="contact-modal-lable">Name</span>
+            <svg class="contact-error-icon" width="14" height="14">
+              <use class="error" href="../img/icons.svg#icon-error"></use>
+              <use class="correct" href="../img/icons.svg#icon-correct"></use>
+            </svg>
+          </span>
+        </label>
 
-      <label class="contact-group-field">
-        <span class="contact-modal-lable">Phone</span>
-        <span class="contact-input-wrapper">
-          <input
-            type="tel"
-            class="modal-input"
-            name="modal-user-phone"
-            required
-          />
-          <svg class="contact-modal-icon" width="20" height="20">
-            <use href="../img/icons.svg#icon-facebook"></use>
-          </svg>
-        </span>
-      </label>
+        <label class="contact-group-field">
+          <span class="contact-input-wrapper">
+            <input
+              type="tel"
+              class="contact-modal-input"
+              name="modal-user-phone"
+              required
+              pattern="[0-9]{10}"
+              placeholder="Your email"
+            />
+            <span class="contact-modal-lable">Phone</span>
+            <svg class="contact-error-icon" width="14" height="14">
+              <use class="error" href="../img/icons.svg#icon-error"></use>
+              <use class="correct" href="../img/icons.svg#icon-correct"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
 
-      <button class="btn modal-btn hero-btn" type="submit">Send</button>
+      <button class="btn contact-btn" type="submit">Send</button>
     </form>
   </div>
 </div>
