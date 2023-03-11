@@ -11,6 +11,40 @@
   right: 0;
   left: 0;
 
-  background-color: var(--backdrop-gb-cl);
+  background-color: var(--backdrop-bgc);
   transition: opacity var(--trans-set), visibility var(--trans-set);
+}
+.contact-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--main-bgc-page);
+  width: 272px;
+  height: 357px;
+
+  padding: 28px 16px;
+}
+
+.contact-btn-close {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+}
+.contact-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 14px;
+}
+.contact-modal-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
 }
