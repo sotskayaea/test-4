@@ -1,87 +1,98 @@
 .container-footer {
   display: flex;
-  color: white;
+  position: relative;
   padding: 72px 24px;
   width: 100%;
-  background-color: black;
-  gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  position: relative;
+  line-height: calc(19 / 16);
+  color: var(--secondary-txt-cl);
+  background-color: var(--secondary-bgc-page);
 }
 
-.container-footer h3 {
+.ft-list-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: calc(24 / 20);
 }
 
-.ft-left .ft-logo {
+.ft-logo {
   display: none;
-  fill: white;
+  fill: var(--secondary-txt-cl);
 }
-@media screen and (min-width: 768px) {
-  .ft-left .ft-logo {
+@media screen and (min-width: 1280px) {  
+  .ft-logo {
     display: block;
   }
 }
+.ft-center {
+display: flex;
+flex-grow: 1;
+}
+
 .ft-center-list {
   display: flex;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
 }
-.nav-links-section,
-.open-hours-ft,
-.contacts-ft {
+.ft-nav-links-section,
+.ft-open-hours-section,
+.ft-contacts-section {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.nav-links-section .navigation-ft {
+.ft-navigation {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contacts-ft .list-contacts-item,
-.ft-right-side .ft-socials-list,
-.ft-right-side .ft-socials-list .ft-socials-icon {
+.ft-contacts-list,
+.ft-socials-list,
+.ft-socials-icon {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 @media screen and (max-width: 768px) {
-  .nav-links-section,
-  .open-hours-ft,
-  .contacts-ft {
+  .ft-nav-links-section,
+  .ft-open-hours-section,
+  .ft-contacts-section {
     max-width: 130px;
     word-break: break-all;
   }
-  .container-footer h3 {
+  .ft-list-title {
     font-size: 18px;
-    line-height: 22px;
+    line-height: calc(22 / 18);
   }
   .container-footer {
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17 / 14);
+    padding: 32px 16px;
   }
   .ft-right-side {
     position: absolute;
-    right: 76px;
-    bottom: 76px;
+    right: 80px;
+    bottom: 152px;
+  }
+  .ft-socials-list {
+    flex-direction: row;
+  }
+  .ft-email {
+    max-width: 110px;
   }
 }
 
-.ft-right-side .ft-socials-list .ft-socials-icon {
-  fill: #ffffff;
-  border: 2px solid;
-  background-color: transparent;
+.ft-socials-icon {
+  fill: var(--secondary-bgc-page);
+  stroke: var(--secondary-txt-cl);
 }
-
