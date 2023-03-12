@@ -16,10 +16,19 @@
 }
 
 .blog-subscription {
-  margin-top: 70px;
+  margin-top: 68px;
   text-align: center;
 }
-
+@media screen and (min-width: 768px) {
+  .blog-subscription {
+    margin-top: 87px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blog-subscription {
+    margin-top: 103px;
+  }
+}
 .blog-subtitle {
   margin-bottom: 24px;
   font-weight: 500;
@@ -39,8 +48,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: calc(24 / 18);
-  width: 170px;
-  height: 40px;
+  padding: 8px 39.5px;
   border-radius: 38px;
 }
 
@@ -48,8 +56,7 @@
   .blog-btn {
     font-size: 28px;
     line-height: calc(24 / 28);
-    width: 280px;
-    height: 64px;
+    padding: 20px 69.5px;
     border-radius: 38px;
   }
 }
@@ -63,9 +70,13 @@
 }
 
 .slick-item {
-  margin: 8px;
+  margin: 0 8px;
 }
-
+@media screen and (min-width: 768px) {
+  .slick-item {
+    margin: 0 15.5px;
+  }
+}
 .slick-box {
   display: flex;
   align-items: center;
@@ -78,7 +89,7 @@
 .my-slick-prev,
 .my-slick-next {
   position: absolute;
-  bottom: -40px;
+  bottom: -60px;
   display: flex;
   align-items: center;
   justify-content: center;
