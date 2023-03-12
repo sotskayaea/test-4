@@ -44,13 +44,20 @@
         </p>
       </div>
       <form class="follow-modal-form">
-        <label class="follow-modal-label">
-          Email
+        <label class="input-box follow-modal-label">
           <input
-            type="email"
-            class="follow-modal-input"
-            placeholder="Your email"
+            type="text"
+            class="input-field follow-modal-input"
+            name="modal-user-name"
+            required
+            pattern="^[А-Яа-яЁё\s]+$"
+            placeholder="Your name"
           />
+          <span class="input-label">Name</span>
+          <svg class="input-warning-icon" width="14" height="14">
+            <use class="error" href="./img/icons.svg#icon-error"></use>
+            <use class="correct" href="./img/icons.svg#icon-correct"></use>
+          </svg>
         </label>
         <button class="follow-modal-btn btn" type="submit" data-modal-submit>
           Subscribe
