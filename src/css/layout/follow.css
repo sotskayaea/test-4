@@ -153,6 +153,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
+  transition: background-color var(--transition-set);
 }
 @media screen and (min-width: 768px) {
   .follow-modal-btn {
