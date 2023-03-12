@@ -1,4 +1,87 @@
 .container-footer {
-  color: red;
-  text-align: center;
+  display: flex;
+  color: white;
+  padding: 72px 24px;
+  width: 100%;
+  background-color: black;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
 }
+
+.container-footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.ft-left .ft-logo {
+  display: none;
+  fill: white;
+}
+@media screen and (min-width: 768px) {
+  .ft-left .ft-logo {
+    display: block;
+  }
+}
+.ft-center-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.nav-links-section,
+.open-hours-ft,
+.contacts-ft {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav-links-section .navigation-ft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contacts-ft .list-contacts-item,
+.ft-right-side .ft-socials-list,
+.ft-right-side .ft-socials-list .ft-socials-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .nav-links-section,
+  .open-hours-ft,
+  .contacts-ft {
+    max-width: 130px;
+    word-break: break-all;
+  }
+  .container-footer h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container-footer {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .ft-right-side {
+    position: absolute;
+    right: 76px;
+    bottom: 76px;
+  }
+}
+
+.ft-right-side .ft-socials-list .ft-socials-icon {
+  fill: #ffffff;
+  border: 2px solid;
+  background-color: transparent;
+}
+
