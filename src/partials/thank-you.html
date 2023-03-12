@@ -6,10 +6,24 @@
       </svg>
     </button>
 
-    <picture class="">
+    <picture class="thank-you-img-wrapper">
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/thank-you/img-tab-des-1x.png 1x,
+          ./img/thank-you/img-tab-des-2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/thank-you/img-mob-1x.png 1x,
+          ./img/thank-you/img-mob-2x.png 2x
+        "
+      />
       <img
         class="thank-you-img"
-        src="../img/thank-you/img-tab-des-1x.png"
+        src="./img/thank-you/img-mob-1x.png"
         alt="Thank you for your contact"
         loading="lazy"
         width="188"
@@ -21,6 +35,7 @@
     <p class="thank-you-description">
       We have received your contact details and will reach you soon.
     </p>
+
     <button class="btn contact-btn" type="button">Continue</button>
   </div>
 </div>

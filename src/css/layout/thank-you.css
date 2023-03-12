@@ -1,10 +1,11 @@
 .contact-modal.thank-you {
   padding: 44px 16px 32px 16px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.thank-you-img {
+.thank-you-img-wrapper {
   padding-bottom: 16px;
 }
 .thank-you-title {
@@ -26,8 +27,13 @@
 @media screen and (min-width: 768px) {
   .contact-modal.thank-you {
     padding: 54px 32px;
+    height: 505px;
   }
 
+  .thank-you-img {
+    width: 266px;
+    height: 202px;
+  }
   .thank-you-title {
     font-size: 32px;
     line-height: calc(39 / 32);
