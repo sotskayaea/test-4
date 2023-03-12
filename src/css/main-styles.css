@@ -23,8 +23,9 @@
 
 /* Moduls */
 @import url('./layout/mobile-menu.css');
-@import url('./layout/contact-us_thank.css');
+@import url('./layout/contact-us.css');
 @import url('./layout/follow.css');
+@import url('./layout/thank-you.css');
 
 /* Layout */
 @import url('./layout/header.css');
