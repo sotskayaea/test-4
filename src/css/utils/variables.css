@@ -8,6 +8,7 @@
 
   --main-txt-cl: #000000;
   --secondary-txt-cl: #ffffff;
+  --modal-txt-cl: #5c5c5c;
 
   /* Input field color */
   --input-label--normal: #5c5c5c;
@@ -30,6 +31,7 @@
   /* Main bgc color page */
   --main-bgc-page: #ffffff;
   --secondary-bgc-page: #000000;
+  --backdrop-bgc: rgba(0, 0, 0, 0.3);
 
   /* Card SET */
   --ident: 16px;

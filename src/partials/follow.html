@@ -1,5 +1,68 @@
-<section>
-  <div class="container container-follow">
-    <h2>Follow to our newsletter</h2>
+<div class="backdrop is-hidden" data-follow>
+  <div class="follow-modal">
+    <button class="follow-modal-close" data-follow-close>
+      <svg class="follow-modal-icon" width="16" height="16">
+        <use href="./img/icons.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <div class="follow-modal-left">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/follow/follow-desk-1x.jpg 1x,
+            ./img/follow/follow-desk-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/follow/follow-tab-1x.jpg 1x,
+            ./img/follow/follow-tab-2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/follow/follow-mob-1x.jpg 1x,
+            ./img/follow/follow-mob-2x.jpg 2x
+          "
+        />
+        <img
+          src="./img/follow/follow-desk-1x.jpg"
+          alt="Букет квітів"
+          class="follow-modal-img"
+        />
+      </picture>
+    </div>
+    <div class="follow-modal-right">
+      <div class="follow-modal-descr">
+        <strong class="follow-modal-title"> Follow to our newsletter</strong>
+        <p class="follow-modal-text">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+      </div>
+      <form class="follow-modal-form">
+        <label class="input-box follow-modal-label">
+          <input
+            type="email"
+            class="input-field follow-modal-input"
+            name="follow-user-email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Your email"
+          />
+          <span class="input-label">Email</span>
+          <svg class="input-warning-icon" width="14" height="14">
+            <use class="error" href="./img/icons.svg#icon-error"></use>
+            <use class="correct" href="./img/icons.svg#icon-correct"></use>
+          </svg>
+        </label>
+        <button class="follow-modal-btn btn" type="submit" data-modal-submit>
+          Subscribe
+        </button>
+      </form>
+    </div>
   </div>
-</section>
+</div>

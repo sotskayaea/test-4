@@ -21,6 +21,11 @@
   background-color: var(--btn-bgc-default);
   position: fixed;
   top: 0px;
+
+  transform: translateX(-100%);
+}
+.modal-window.is-open {
+  transform: translateY(0);
 }
 
 .close-button {

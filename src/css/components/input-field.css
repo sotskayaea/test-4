@@ -1,0 +1,101 @@
+.input-box {
+  position: relative;
+}
+.input-label {
+  position: absolute;
+  top: -8px;
+  transform: translateY(-100%);
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  display: block;
+  color: var(--input-label--normal);
+
+  transition: color var(--transition-set);
+}
+
+.input-field {
+  display: block;
+  border: 1px solid var(--input-label-normal-border);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  /* Питання по бордеру 10 чи 9 */
+  padding: 9px 26px 9px 11px;
+  color: var(--input-field-value);
+
+  width: 100%;
+  outline: none;
+
+  transition: border-color var(--transition-set);
+}
+.input-field::placeholder {
+  color: var(--input-field-placeholder);
+}
+.input-field:focus,
+.input-field:focus-visible {
+  border-color: var(--input-label-focus);
+}
+.input-warning-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error,
+.correct {
+  opacity: 0;
+
+  transition: opacity var(--transition-set);
+}
+
+/* VALID */
+.input-field:not(:placeholder-shown):valid:required {
+  border-color: var(--input-label-correct);
+}
+
+.input-field:not(:placeholder-shown):valid:required
+  ~ .input-warning-icon
+  > .correct {
+  opacity: 1;
+}
+.input-field:not(:placeholder-shown):valid:required + .input-label {
+  color: var(--input-label-correct);
+}
+/* INVALID */
+.input-field:not(:placeholder-shown):invalid:required {
+  border-color: var(--input-label-error);
+}
+
+.input-field:not(:placeholder-shown):invalid:required
+  ~ .input-warning-icon
+  > .error {
+  opacity: 1;
+}
+.input-field:not(:placeholder-shown):invalid:required + .input-label {
+  color: var(--input-label-error);
+}
+
+@media screen and (min-width: 768px) {
+  .input-label {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+  .input-field {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    padding: 15px 36px 15px 15px;
+  }
+  .input-warning-icon {
+    right: 16px;
+
+    width: 20px;
+    height: 20px;
+  }
+}

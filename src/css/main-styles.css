@@ -17,12 +17,17 @@
 @import url('./components/title.css');
 @import url('./components/button.css');
 @import url('./components/card-set.css');
+@import url('./components/input-field.css');
 @import url('./components/container.css');
+@import url('./components/section.css');
+@import url('./components/input-field.css');
+@import url('./components/modal-common.css');
 
 /* Moduls */
 @import url('./layout/mobile-menu.css');
-@import url('./layout/contact-us_thank.css');
+@import url('./layout/contact-us.css');
 @import url('./layout/follow.css');
+@import url('./layout/thank-you.css');
 
 /* Layout */
 @import url('./layout/header.css');
