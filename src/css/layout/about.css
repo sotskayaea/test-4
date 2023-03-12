@@ -1,7 +1,4 @@
-.container-about {
-  color: var(--main-txt-cl);
-  /* text-align: center; */
-}
+
 .title-about {
   margin-bottom: 32px;
 
@@ -9,10 +6,6 @@
 
   font-style: normal;
   font-weight: 700;
-}
-.about-description {
-  font-style: normal;
-  font-weight: 400;
 }
 @media screen and (max-width: 767px) {
   .about-description {
@@ -30,6 +23,7 @@
   }
   .about-description {
     font-size: 20px;
+    line-height: calc(24/20);
     max-width: 322px;
   }
   .about-img {
@@ -46,6 +40,7 @@
   }
   .about-description {
     font-size: 22px;
+    line-height: calc(27/22);
     max-width: 510px;
   }
   .about-img {
