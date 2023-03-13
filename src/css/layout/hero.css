@@ -153,10 +153,6 @@
   .hero-button:focus .hero-btn-arrow {
     transform: rotate(-122deg);
   }
-  .hero-icon-button:hover,
-  .hero-icon-button:focus {
-    fill: black;
-  }
 }
 
 @keyframes scale-up-center {
