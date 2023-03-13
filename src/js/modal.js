@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay = document.querySelector('.js-overlay-modal'),
         closeButtons = document.querySelectorAll('.js-modal-close');
 
-
+    console.log(111);
     /* Перебираем массив кнопок */
     modalButtons.forEach(function (item) {
 
