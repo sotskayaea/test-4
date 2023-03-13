@@ -1,66 +1,86 @@
 (() => {
-
     const contact = {
-        btnOrder: document.querySelector('.btnOrder'),
-        btnClose: document.querySelector('.btnClose'),
+        contactOpen: document.querySelector('.contactOpen'),
+
+        forma: document.querySelector('.modal-form'),
+        modalContact: document.querySelector('.contact-modal'),
+        contactCloseBtn: document.querySelector('.contactCloseBtn'),
         btnSubmit: document.querySelector('.btnSubmit'),
-        formaContact: document.querySelector('.contact-modal'),
+
+        overlay: document.querySelector('.overlay'),
+
+        modalThank: document.querySelector('.thank-you'),
+        thankClose: document.querySelector('.closeThank'),
+        thankCloseBtn: document.querySelector('.closeThank-btn'),
     };
-    function openOrder() {
-        console.log(555);
-        formaContact.classList.add('active')
+
+    function contactOpen() {
+
+        contact.modalContact.classList.add('active');
+    }
+    function contactClose() {
+        contact.modalContact.classList.remove('active');
     }
 
-    function closeContact() {
-        console.log(666);
-        formaContact.classList.toggle('active')
+    function thanktOpen() {
+        contact.modalThank.classList.add('active');
+    }
+    function thankClose() {
+        contact.modalThank.classList.remove('active');
     }
 
-    function submitContact() {
-        if (document.querySelector('.input-field-name').validity.valid && document.querySelector('.input-field-tel').validity.valid) {
-            console.log(1);
-            closeContact();
-        }
-        console.log(2);
-
-        // refs.modal.classList.toggle("is-hidden");
-
+    function overlayOpen() {
+        contact.overlay.classList.add('active');
+    }
+    function overlayClose() {
+        contact.overlay.classList.remove('active');
     }
 
 
-    contact.btnOrder.addEventListener('click', openOrder)
-    contact.btnSubmit.addEventListener('click', submitContact)
+    contact.contactOpen.addEventListener('click', () => {
+        contactOpen();
+        overlayOpen();
+    });
 
-    // const OpenContactUs = () => {
+    contact.thankCloseBtn.addEventListener('click', () => {
+        thankClose();
+        overlayClose();
+    });
+    contact.thankClose.addEventListener('click', () => {
+        thankClose();
+        overlayClose();
+    });
+    contact.contactCloseBtn.addEventListener('click', () => {
+        contactClose();
+        overlayClose();
 
+        contact.forma.reset();
+    });
 
-    //     inputName.addEventListener('click', () => {
-    //         console.log(inputName.validity.valid)
-    //     })
+    contact.forma.addEventListener('submit', (e) => {
+        e.preventDefault();
+        contact.forma.reset();
 
+        contactClose()
+        thanktOpen()
 
-    //     const toggleMenu = () => {
-    //         const isMenuOpen =
-    //             openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    //         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    //         mobileMenu.classList.toggle('is-open');
+    })
 
-    //         const scrollLockMethod = !isMenuOpen
-    //             ? 'disableBodyScroll'
-    //             : 'enableBodyScroll';
+    document.body.addEventListener('keyup', function (e) {
+        var key = e.keyCode;
 
-    //         bodyScrollLock[scrollLockMethod](document.body);
+        if (key == 27) {
+            overlayClose();
+            contactClose();
+            thankClose();
 
-    //     };
+        };
+    }, false);
 
-    //     openMenuBtn.addEventListener('click', toggleMenu);
-    //     closeMenuBtn.addEventListener('click', toggleMenu);
+    contact.overlay.addEventListener('click', function () {
+        contactClose();
+        thankClose();
+        this.classList.remove('active');
+    });
 
-    //     // Close the mobile menu on wider screens if the device orientation changes
-    //     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    //         if (!e.matches) return;
-    //         mobileMenu.classList.remove('is-open');
-    //         openMenuBtn.setAttribute('aria-expanded', false);
-    //         bodyScrollLock.enableBodyScroll(document.body);
-    //     });
 })();
