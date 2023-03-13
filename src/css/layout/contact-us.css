@@ -1,9 +1,24 @@
-.contact-modal {
-  opacity: 0;
+.is-hidden {
   visibility: hidden;
-  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
 
+  transition-delay: 50ms;
+}
+
+.contact-backdrop {
   position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: var(--backdrop-bgc);
+  transition: opacity var(--trans-set), visibility var(--trans-set);
+}
+.contact-modal {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
