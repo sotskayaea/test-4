@@ -2,3 +2,82 @@
   color: lawngreen;
   text-align: center;
 }
+
+.title {
+  font-size: 24px;
+  line-height: 1.2;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.title::after {
+  content: '';
+  flex-grow: 1;
+  border: 1px solid var(--secondary-bgc-page);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 44px;
+    line-height: 1.23;
+    gap: 16px;
+  }
+}
+
+.main-nav-store {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav-store {
+    
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+.store-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.250;
+  color: #000000;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.store-list-price {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.250;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.btn-order-flowers {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--secondary-txt-cl);
+
+  background-color: var(--btn-bgc-default);
+  border: transparent;
+}
+
+.btn-order-flowers:hover {
+  background-color: var(--btn-bgc-hover);
+}
+
+.btn-order-flowers:focus {
+  background-color: var(--btn-bgc-focus);
+}
+
+.btn-order-flowers:disabled {
+  background-color: var(--btn-bgc-disabled);
+}
