@@ -1,24 +1,25 @@
 .container-store {
-  color: lawngreen;
-  text-align: center;
+  /* color: lawngreen; */
+  /* text-align: center; */
 }
 
-.title {
+.title-store {
   font-size: 24px;
   line-height: 1.2;
   display: flex;
   gap: 14px;
   align-items: center;
+  margin-bottom: 32px;
 }
 
-.title::after {
+.title-store::after {
   content: '';
   flex-grow: 1;
   border: 1px solid var(--secondary-bgc-page);
 }
 
 @media screen and (min-width: 768px) {
-  .title {
+  .title-store {
     font-size: 44px;
     line-height: 1.23;
     gap: 16px;
@@ -41,14 +42,18 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .main-nav-store
+}
 
+.store-img{
+  
 }
 
 .store-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.250;
-  color: #000000;
+  color: var(--secondary-bgc-page);
   margin-top: 12px;
   margin-bottom: 6px;
 }
@@ -57,17 +62,26 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.250;
-  color: #000000;
+  color: var(--secondary-bgc-page);
   opacity: 0.6;
+}
+
+.store-btn-block{
+  display: flex;
+  justify-content: center;
 }
 
 .btn-order-flowers {
   display: inline-block;
   font-weight: 500;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  padding: 8px 39.5px;
+  border-radius: 38px;
   color: var(--secondary-txt-cl);
-
   background-color: var(--btn-bgc-default);
   border: transparent;
+  text-align: center;
 }
 
 .btn-order-flowers:hover {
