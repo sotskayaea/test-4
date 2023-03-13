@@ -1,15 +1,18 @@
 .hero {
-  margin-bottom: 136px;
+  margin: 0 auto;
   height: 274px;
   position: relative;
   z-index: 1;
+  margin-bottom: 100px;
 }
+
 .hero-container {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .hero-button {
@@ -36,7 +39,7 @@
   height: 274px;
   width: 145px;
 }
-.hero-wrapper {
+.hero-wrapper-piece {
   position: absolute;
   top: 0;
   left: 50%;
@@ -66,13 +69,13 @@
     height: 150px;
   }
   .hero-img {
-    width: 390px;
-    height: 636px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-wrapper {
+  .hero-wrapper-piece {
     position: absolute;
     top: 0;
     left: 50%;
@@ -81,10 +84,11 @@
     height: 100%;
     animation: scale-up-center 1000ms ease-out 1000ms both;
   }
-  .container {
+  .hero-container {
     max-width: 1280px;
   }
   .hero {
+    max-width: 1280px;
     height: 878px;
   }
   .hero-title {
@@ -127,12 +131,12 @@
     height: 166px;
   }
   .hero-img {
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 878px;
     object-fit: cover;
     object-position: center;
   }
-  .hero-btn-text {
+  .btn-txt {
     transform-origin: center;
     animation: infinity-rotate 30s linear 4s infinite;
   }
@@ -140,11 +144,17 @@
     transform-origin: center;
     transition: transform 500ms ease-out;
   }
+
   .hero-button:hover .hero-btn-arrow,
   .hero-button:focus .hero-btn-arrow {
     transform: rotate(-122deg);
   }
+  .hero-icon-button:hover,
+  .hero-icon-button:focus {
+    fill: black;
+  }
 }
+
 @keyframes scale-up-center {
   0% {
     clip-path: inset(150px 421px 92px 421px round 226px);
