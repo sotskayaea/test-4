@@ -144,6 +144,10 @@
     transform-origin: center;
     transition: transform 500ms ease-out;
   }
+  .hero-button:hover .btn-txt,
+  .hero-button:focus .btn-txt {
+    animation-play-state: paused;
+  }
 
   .hero-button:hover .hero-btn-arrow,
   .hero-button:focus .hero-btn-arrow {
