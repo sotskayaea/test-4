@@ -1,4 +1,38 @@
 .container-delivery {
-  color: tomato;
-  text-align: center;
+}
+
+.delivery-item {
+  display: flex;
+  gap: 56px;
+
+  align-items: center;
+}
+.delivery-number {
+  min-width: 64px;
+  min-height: 64px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: calc(32 / 26);
+}
+
+.delivery-list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+.delivery-description {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(39 / 32);
 }

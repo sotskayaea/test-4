@@ -1,5 +1,5 @@
 <div class="contact-modal modal" data-modal="1">
-  <button type="button" class="contact-btn-close js-modal-close">
+  <button type="button" class="contact-btn-close btnClose">
     <svg class="contact-modal-icon" width="12" height="12">
       <use href="./img/icons.svg#icon-close-black"></use>
     </svg>
@@ -16,7 +16,7 @@
       <label class="input-box">
         <input
           type="text"
-          class="input-field"
+          class="input-field input-field-name"
           name="modal-user-name"
           required
           pattern="^[А-Яа-яЁё\s]+$"
@@ -32,7 +32,7 @@
       <label class="input-box">
         <input
           type="tel"
-          class="input-field"
+          class="input-field input-field-tel"
           name="modal-user-phone"
           required
           pattern="[0-9]{10}"
@@ -46,11 +46,7 @@
       </label>
     </div>
 
-    <button
-      type="submit"
-      class="btn contact-btn js-modal-close js-open-modal"
-      data-modal="2"
-    >
+    <button type="submit" class="btn contact-btn btnSubmit" data-modal="2">
       Send
     </button>
   </form>
