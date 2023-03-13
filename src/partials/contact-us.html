@@ -1,53 +1,53 @@
-<div class="contact-modal modal" data-modal="1">
-  <button type="button" class="contact-btn-close contactCloseBtn">
-    <svg class="contact-modal-icon" width="12" height="12">
-      <use href="./img/icons.svg#icon-close-black"></use>
-    </svg>
-  </button>
-
-  <form action="#" class="modal-form" autocomplete="on">
-    <strong class="contact-modal-title">Contact us</strong>
-    <p class="contact-modal-description">
-      If you have any additional questions or you want to clarify something
-      before you make an order please fill in your contact details. We will call
-      you back.
-    </p>
-    <div class="contact-field-wrapper">
-      <label class="input-box">
-        <input
-          type="text"
-          class="input-field input-field-name"
-          name="modal-user-name"
-          required
-          pattern="^[А-Яа-яЁё\s]+$"
-          placeholder="Your name"
-        />
-        <span class="input-label">Name</span>
-        <svg class="input-warning-icon" width="14" height="14">
-          <use class="error" href="./img/icons.svg#icon-error"></use>
-          <use class="correct" href="./img/icons.svg#icon-correct"></use>
-        </svg>
-      </label>
-
-      <label class="input-box">
-        <input
-          type="tel"
-          class="input-field input-field-tel"
-          name="modal-user-phone"
-          required
-          pattern="[0-9]{10}"
-          placeholder="Your email"
-        />
-        <span class="input-label">Phone</span>
-        <svg class="input-warning-icon" width="14" height="14">
-          <use class="error" href="./img/icons.svg#icon-error"></use>
-          <use class="correct" href="./img/icons.svg#icon-correct"></use>
-        </svg>
-      </label>
-    </div>
-
-    <button type="submit" class="btn contact-btn btnSubmit" data-modal="2">
-      Send
+<div class="contact-backdrop is-hidden" data-modal>
+  <div class="contact-modal">
+    <button type="button" class="contact-btn-close" data-modal-close>
+      <svg class="contact-modal-icon" width="12" height="12">
+        <use href="./img/icons.svg#icon-close-black"></use>
+      </svg>
     </button>
-  </form>
+
+    <form action="#" class="modal-form" autocomplete="on">
+      <strong class="contact-modal-title">Contact us</strong>
+      <p class="contact-modal-description">
+        If you have any additional questions or you want to clarify something
+        before you make an order please fill in your contact details. We will
+        call you back.
+      </p>
+      <div class="contact-field-wrapper">
+        <label class="input-box">
+          <input
+            type="text"
+            class="input-field"
+            name="modal-user-name"
+            required
+            pattern="^[А-Яа-яЁё\s]+$"
+            placeholder="Your name"
+          />
+          <span class="input-label">Name</span>
+          <svg class="input-warning-icon" width="14" height="14">
+            <use class="error" href="./img/icons.svg#icon-error"></use>
+            <use class="correct" href="./img/icons.svg#icon-correct"></use>
+          </svg>
+        </label>
+
+        <label class="input-box">
+          <input
+            type="tel"
+            class="input-field"
+            name="modal-user-phone"
+            required
+            pattern="[0-9]{10}"
+            placeholder="Your email"
+          />
+          <span class="input-label">Phone</span>
+          <svg class="input-warning-icon" width="14" height="14">
+            <use class="error" href="./img/icons.svg#icon-error"></use>
+            <use class="correct" href="./img/icons.svg#icon-correct"></use>
+          </svg>
+        </label>
+      </div>
+
+      <button class="btn contact-btn" type="submit">Send</button>
+    </form>
+  </div>
 </div>
