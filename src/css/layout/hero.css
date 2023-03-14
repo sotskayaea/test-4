@@ -41,9 +41,8 @@
   font-weight: 400;
   margin-left: 11px;
 }
-.hero-img {
-}
-.hero-wrapper-piece {
+
+.hero-wrapper {
   position: absolute;
   top: 95px;
   left: 50%;
@@ -72,8 +71,10 @@
     line-height: 29px;
     width: 76px;
   }
-  .hero-wrapper-piece {
+  .hero-wrapper {
     top: 119px;
+    width: 390px;
+    height: 636px;
   }
   .hero-icon-button {
     width: 145px;
@@ -83,14 +84,10 @@
     width: 100%;
     height: 100%;
   }
-  .hero-wrapper-piece {
-    width: 390px;
-    height: 636px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-wrapper-piece {
+  .hero-wrapper {
     position: absolute;
     top: 0;
     left: 50%;
@@ -137,14 +134,14 @@
     animation: move-vertical 1000ms ease-out 1000ms both;
     --shift-from-x: 0;
     --shift-to-x: -90px;
-    --shift-to-y: 170px;
+    --shift-to-y: 200px;
   }
   .hero-button {
     margin-top: 0;
     margin-right: 145px;
     --shift-from-x: 0;
     --shift-to-x: 25px;
-    --shift-to-y: 170px;
+    --shift-to-y: 200px;
     animation: move-vertical 1000ms ease-out 1000ms both;
   }
   .hero-icon-button {
