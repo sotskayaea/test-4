@@ -1,27 +1,15 @@
-/* ========================== BACKDROP ========================== */
-
-/* .backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-} */
-
 .modal-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 110px 124px 110px;
   background-color: var(--btn-bgc-default);
   position: fixed;
   top: 0px;
-
+  z-index: 1;
   transform: translateX(-100%);
 }
 .modal-window.is-open {
@@ -29,12 +17,12 @@
 }
 
 .close-button {
+  padding: 0;
   position: absolute;
   top: 24px;
   right: 24px;
-
-  width: 24px;
-  height: 24px;
+  border: none;
+  background-color: var(--btn-bgc-default);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -44,29 +32,13 @@
 .close-button-icon {
   width: 12px;
   height: 12px;
+  fill: white;
 }
 
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-/* 
-.mobile-menu-close-btn {
-  display: flex;
-  position: absolute;
-} */
-
-.close-button {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 24px;
-  right: 24px;
 }
 
 /* .mobile-menu-close-btn {
@@ -82,8 +54,8 @@
 .menu-list {
   display: flex;
   flex-direction: column;
-  padding-top: 124px;
-  padding-bottom: 180px;
+  /* padding-top: 124px; */
+  /* padding-bottom: 180px; */
   gap: 26px;
   font-size: 20px;
   line-height: calc(24 / 20);
