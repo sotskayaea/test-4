@@ -98,7 +98,6 @@
     height: 16px;
   }
 }
-.follow-modal-img {}
 
 .follow-modal-descr {
   margin-bottom: 18px;
@@ -179,4 +178,3 @@
     line-height: calc(22 / 18);
   }
 }
-.btn {}
