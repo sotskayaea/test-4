@@ -1,4 +1,6 @@
-
+.container-about {
+  padding-top: 100px;
+}
 .title-about {
   margin-bottom: 32px;
 
@@ -23,7 +25,7 @@
   }
   .about-description {
     font-size: 20px;
-    line-height: calc(24/20);
+    line-height: calc(24 / 20);
     max-width: 322px;
   }
   .about-img {
@@ -40,7 +42,7 @@
   }
   .about-description {
     font-size: 22px;
-    line-height: calc(27/22);
+    line-height: calc(27 / 22);
     max-width: 510px;
   }
   .about-img {
@@ -48,4 +50,3 @@
     height: 344px;
   }
 }
-

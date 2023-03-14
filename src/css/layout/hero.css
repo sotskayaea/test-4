@@ -1,14 +1,17 @@
 .hero {
   margin: 0 auto;
-  height: 274px;
+  padding-bottom: 0;
+  /* margin-bottom: 100px; */
+}
+.hero-container {
   position: relative;
   z-index: 1;
-  margin-bottom: 100px;
-}
 
-.hero-container {
+  height: 405px;
+}
+.hero-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 100%;
   margin: 0 auto;
@@ -16,6 +19,7 @@
 }
 
 .hero-button {
+  margin-top: 205px;
   padding: 0;
   border: 0;
   background: none;
@@ -23,7 +27,7 @@
 
 .hero-title {
   position: absolute;
-  bottom: -36px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 400;
@@ -31,38 +35,45 @@
   line-height: calc(63 / 52);
 }
 .hero-descr {
+  margin-top: 225px;
+
   width: 46px;
   font-weight: 400;
   margin-left: 11px;
 }
 .hero-img {
-  height: 274px;
-  width: 145px;
 }
 .hero-wrapper-piece {
   position: absolute;
-  top: 0;
+  top: 95px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+
+  height: 274px;
+  width: 145px;
 }
 
 @media screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-    padding: 0 24px;
-  } */
-  .hero {
-    height: 636px;
+  .hero-container {
+    height: 849px;
   }
   .hero-title {
     font-size: 120px;
     line-height: 146px;
   }
+  .hero-button {
+    margin-top: 381px;
+  }
+
   .hero-descr {
+    margin-top: 419px;
     font-size: 24px;
     line-height: 29px;
     width: 76px;
+  }
+  .hero-wrapper-piece {
+    top: 119px;
   }
   .hero-icon-button {
     width: 145px;
@@ -71,6 +82,10 @@
   .hero-img {
     width: 100%;
     height: 100%;
+  }
+  .hero-wrapper-piece {
+    width: 390px;
+    height: 636px;
   }
 }
 
@@ -84,12 +99,16 @@
     height: 100%;
     animation: scale-up-center 1000ms ease-out 1000ms both;
   }
-  .hero-container {
+  .hero-box {
+    align-items: center;
     max-width: 1280px;
   }
   .hero {
     max-width: 1280px;
     height: 878px;
+  }
+  .hero-container {
+    height: 100%;
   }
   .hero-title {
     bottom: 0;
@@ -109,6 +128,7 @@
     background-color: currentColor;
   }
   .hero-descr {
+    margin-top: 0;
     font-size: 32px;
     line-height: 39px;
     width: 102px;
@@ -120,6 +140,7 @@
     --shift-to-y: 170px;
   }
   .hero-button {
+    margin-top: 0;
     margin-right: 145px;
     --shift-from-x: 0;
     --shift-to-x: 25px;

@@ -73,7 +73,7 @@
             overlayClose();
             contactClose();
             thankClose();
-
+            contact.forma.reset();
         };
     }, false);
 
@@ -81,6 +81,7 @@
         contactClose();
         thankClose();
         this.classList.remove('active');
+        contact.forma.reset();
     });
 
 })();
