@@ -1,12 +1,14 @@
+.header-section {
+  padding-top: 16px;
+  padding-bottom: 44px;
+}
+
 .container-header {
-  /* position: fixed; */
   top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
   align-items: center;
 }
 
@@ -23,6 +25,7 @@
 }
 
 .header-btn-tel {
+  padding: 0;
   margin-left: auto;
   display: block;
   background-color: transparent;
@@ -30,6 +33,8 @@
 }
 
 .header-btn-burger {
+  margin-left: 14px;
+  padding: 0;
   display: block;
   background-color: var(--secondary-txt-cl);
   border: none;
@@ -38,44 +43,69 @@
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .icon-logo-tab {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .icon-logo {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container-header {
+  .header-section {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 38px;
+  }
+  .container-header {
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-items: center;
   }
 
   .header-btn-burger {
     display: none;
   }
   .header-list {
-    gap: 48px;
-    margin: 0 auto;
+    gap: 24px;
+    margin-left: 80px;
     display: flex;
     font-size: 20px;
     line-height: calc(24 / 20);
     color: var(--main-txt-cl);
   }
+  .header-icon-tel {
+    width: 22px;
+    height: 22px;
+  }
   .header-btn-tel {
-    margin-left: 0px;
+    margin-left: 75px;
     display: block;
     background-color: var(--secondary-txt-cl);
     border: none;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container-header {
+  .header-list {
+    gap: 48px;
+    margin-left: 261px;
+  }
+  .header-section {
     padding-top: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 64px;
+  }
+  .header-icon-tel {
+    width: 28px;
+    height: 28px;
+  }
+  .header-btn-tel {
+    margin-left: 306px;
+    display: block;
+    background-color: var(--secondary-txt-cl);
+    border: none;
   }
 }
