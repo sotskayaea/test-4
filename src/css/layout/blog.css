@@ -45,7 +45,6 @@
 }
 
 .blog-btn {
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(24 / 18);
   padding: 8px 39.5px;
@@ -90,13 +89,11 @@
 .my-slick-prev,
 .my-slick-next {
   position: absolute;
-  bottom: -60px;
+  bottom: -68px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  width: 50px;
-  height: 40px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 900;
@@ -135,4 +132,7 @@
   .my-slick-next {
     right: 500px;
   }
+}
+.slick-icon-next {
+  transform: rotateY(180deg);
 }
