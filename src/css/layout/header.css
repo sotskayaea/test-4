@@ -1,6 +1,11 @@
 .header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   padding-top: 16px;
-  padding-bottom: 44px;
+  padding-bottom: 16px;
 }
 
 .container-header {
@@ -9,18 +14,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
 }
 
-.icon-logo,
+.icon-logo {
+  color: var(--con-logo);
+}
 .icon-logo-tab {
+  display: block;
   color: var(--con-logo);
 }
 .header-icon-tel {
+  display: block;
   margin-left: auto;
-  color: var(--con-logo);
-}
-.header-icon-burger {
   color: var(--con-logo);
 }
 
@@ -36,14 +41,14 @@
   margin-left: 14px;
   padding: 0;
   display: block;
-  background-color: var(--secondary-txt-cl);
+  background-color: transparent;
   border: none;
 }
 .header-list {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .icon-logo-tab {
     display: none;
   }
@@ -57,7 +62,7 @@
 @media screen and (min-width: 768px) {
   .header-section {
     padding-top: 24px;
-    padding-bottom: 38px;
+    padding-bottom: 24px;
   }
   .container-header {
     top: 0;
@@ -72,7 +77,7 @@
   }
   .header-list {
     gap: 24px;
-    margin-left: 80px;
+    margin-left: auto;
     display: flex;
     font-size: 20px;
     line-height: calc(24 / 20);
@@ -96,7 +101,7 @@
   }
   .header-section {
     padding-top: 28px;
-    padding-bottom: 64px;
+    padding-bottom: 28px;
   }
   .header-icon-tel {
     width: 28px;
@@ -105,7 +110,7 @@
   .header-btn-tel {
     margin-left: 306px;
     display: block;
-    background-color: var(--secondary-txt-cl);
+    background-color: transparent;
     border: none;
   }
 }
