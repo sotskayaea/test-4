@@ -13,10 +13,11 @@
   left: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .icon-logo {
+  display: block;
   color: var(--con-logo);
 }
 .icon-logo-tab {
