@@ -1,6 +1,6 @@
 .ft-section{
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 60px;
+  padding-bottom: 54px;
   background-color: var(--secondary-bgc-page);
 }
 
@@ -30,6 +30,11 @@
   fill: var(--secondary-txt-cl);
 }
 @media screen and (min-width: 1280px) {  
+  .ft-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  
   .ft-logo {
     display: block;
   }
@@ -76,6 +81,10 @@ flex-grow: 1;
 }
 
 @media screen and (max-width: 768px) {
+  .ft-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
   .ft-nav-links-section,
   .ft-open-hours-section,
   .ft-contacts-section {
