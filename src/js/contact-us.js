@@ -1,6 +1,7 @@
 (() => {
     const contact = {
         contactOpen: document.querySelector('.contactOpen'),
+        contactOpenHero: document.querySelector('.contactOpenHero'),
 
         forma: document.querySelector('.modal-form'),
         modalContact: document.querySelector('.contact-modal'),
@@ -38,6 +39,10 @@
 
 
     contact.contactOpen.addEventListener('click', () => {
+        contactOpen();
+        overlayOpen();
+    });
+    contact.contactOpenHero.addEventListener('click', () => {
         contactOpen();
         overlayOpen();
     });
