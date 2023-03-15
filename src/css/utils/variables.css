@@ -32,6 +32,7 @@
   --main-bgc-page: #ffffff;
   --secondary-bgc-page: #000000;
   --backdrop-bgc: rgba(0, 0, 0, 0.3);
+  --scroll-header-bgc: #999491;
 
   /* Card SET */
   --ident: 16px;
