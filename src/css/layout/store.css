@@ -4,18 +4,13 @@
 }
 
 .title-store {
-  font-size: 24px;
-  line-height: 1.2;
-  display: flex;
-  gap: 14px;
-  align-items: center;
   margin-bottom: 32px;
 }
 
 .title-store::after {
   content: '';
   flex-grow: 1;
-  border: 1px solid var(--secondary-bgc-page);
+  border: 1px solid var(--main-txt-cl);
 }
 
 @media screen and (min-width: 768px) {
@@ -36,31 +31,42 @@
   }
 }
 
+.nav-list {
+  gap: 32px;
+}
+
 .main-nav-store {
   list-style: none;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 32px;
+  gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .main-nav-store {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .main-nav-store{
-
-  }
+  .main-nav-store {}
 }
 
-.store-img{
-  width: 136px;
-  height: 155px;
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ident);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--ident) * (var(--items) - 1)) / var(--items));
+  --ident: 32px;
+}
+
+.store-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,7 +87,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.250;
-  color: var(--secondary-bgc-page);
+  color: var(--main-txt-cl);
   margin-top: 12px;
   margin-bottom: 6px;
 }
@@ -109,7 +115,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.250;
-  color: var(--secondary-bgc-page);
+  color: var(--main-txt-cl);
   opacity: 0.6;
 }
 
@@ -129,22 +135,16 @@
   }
 }
 
-.store-btn-block{
+.store-btn-block {
   display: flex;
   justify-content: center;
 }
 
 .btn-order-flowers {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: calc(24 / 18);
-  padding: 8px 39.5px;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  padding: 10px 35px;
   border-radius: 38px;
-  color: var(--secondary-txt-cl);
-  background-color: var(--btn-bgc-default);
-  border: transparent;
-  text-align: center;
 }
 
 .btn-order-flowers:hover {
@@ -161,18 +161,18 @@
 
 @media screen and (min-width: 768px) {
   .btn-order-flowers {
-  font-size: 28px;
-  line-height: 0.857;
-  padding: 20px 69.5px;
-  border-radius: 38px;
+    font-size: 28px;
+    line-height: calc(24 / 28);
+    padding: 20px 43.5px;
+    border-radius: 38px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .btn-order-flowers {
-  font-size: 28px;
-  line-height: calc(24 / 28);
-  padding: 20px 69.5px;
-  border-radius: 38px;
+    font-size: 28px;
+    line-height: calc(24 / 28);
+    padding: 20px 43.5px;
+    border-radius: 38px;
   }
 }
