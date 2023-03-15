@@ -23,15 +23,14 @@
   display: block;
   color: var(--con-logo);
 }
-.header-icon-tel {
+.header-tel {
   display: block;
   margin-left: auto;
   color: var(--con-logo);
 }
 
-.header-btn-tel {
-  padding: 0;
-  margin-left: auto;
+.header-tel {
+  margin-left: 184px;
   display: block;
   background-color: transparent;
   border: none;
@@ -69,7 +68,6 @@
     left: 0;
     display: flex;
     align-items: center;
-    align-items: center;
   }
 
   .header-btn-burger {
@@ -83,11 +81,11 @@
     line-height: calc(24 / 20);
     color: var(--main-txt-cl);
   }
-  .header-icon-tel {
+  .header-tel {
     width: 22px;
     height: 22px;
   }
-  .header-btn-tel {
+  .header-tel {
     margin-left: 75px;
     display: block;
     background-color: var(--secondary-txt-cl);
@@ -103,11 +101,11 @@
     padding-top: 28px;
     padding-bottom: 28px;
   }
-  .header-icon-tel {
+  .header-tel {
     width: 28px;
     height: 28px;
   }
-  .header-btn-tel {
+  .header-tel {
     margin-left: 306px;
     display: block;
     background-color: transparent;
