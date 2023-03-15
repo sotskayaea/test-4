@@ -4,3 +4,5 @@ import './js/mobile-menu.js';
 import './js/slick.js';
 import './js/modal.js';
 import './js/form-validation';
+import './js/header-scroll';
+import './js/anchor-scroll';

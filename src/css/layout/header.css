@@ -1,3 +1,8 @@
+.header-bg {
+  background-color: var(--scroll-header-bgc);
+  backdrop-filter: blur(2px);
+  opacity: 0.85;
+}
 .header-section {
   position: fixed;
   top: 0;
@@ -6,6 +11,9 @@
   z-index: 10;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  transition: background-color var(--transition-set),
+    backdrop-filter var(--transition-set);
 }
 
 .container-header {
@@ -89,7 +97,7 @@
   .header-tel {
     margin-left: 75px;
     display: block;
-    background-color: var(--secondary-txt-cl);
+    background-color: transparent;
     border: none;
   }
 }
@@ -111,5 +119,40 @@
     display: block;
     background-color: transparent;
     border: none;
+  }
+
+  .icon-logo-tab {
+    animation: logo-icon 1000ms ease-out 1000ms both;
+  }
+  .header-iteam {
+    animation: header-iteam 1000ms ease-out 1000ms both;
+  }
+  .header-tel {
+    animation: call-phone 1000ms ease-out 1000ms both;
+  }
+}
+@keyframes logo-icon {
+  0% {
+  }
+
+  100% {
+    fill: var(--main-bgc-page);
+  }
+}
+@keyframes header-iteam {
+  0% {
+  }
+
+  100% {
+    color: var(--main-bgc-page);
+  }
+}
+
+@keyframes call-phone {
+  0% {
+  }
+
+  100% {
+    fill: var(--main-bgc-page);
   }
 }
