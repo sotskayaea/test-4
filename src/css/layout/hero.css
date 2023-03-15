@@ -153,6 +153,9 @@
     height: 878px;
     object-fit: cover;
     object-position: center;
+
+    transform: translate(4%, 4%);
+    animation: photo-move 1000ms ease-out 1000ms both;
   }
   .btn-txt {
     transform-origin: center;
@@ -204,5 +207,18 @@
   }
   to {
     transform: rotate(0);
+  }
+}
+
+.header-tel {
+  animation: photo-move 1000ms ease-out 1000ms both;
+}
+
+@keyframes photo-move {
+  0% {
+  }
+
+  100% {
+    transform: translate(0);
   }
 }
