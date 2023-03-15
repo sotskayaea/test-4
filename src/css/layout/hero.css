@@ -210,10 +210,6 @@
   }
 }
 
-.header-tel {
-  animation: photo-move 1000ms ease-out 1000ms both;
-}
-
 @keyframes photo-move {
   0% {
   }
