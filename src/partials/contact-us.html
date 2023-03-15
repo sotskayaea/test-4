@@ -19,7 +19,7 @@
           class="input-field input-field-name input-js"
           name="modal-user-name"
           required
-          pattern="^[А-Яа-яЁё\s]+$"
+          pattern="[a-z]{1,15}"
           placeholder="Your name"
         />
         <span class="input-label">Name</span>
@@ -31,14 +31,14 @@
 
       <label class="input-box">
         <input
-          type="tel"
+          type="email"
           class="input-field input-field-tel input-js"
-          name="modal-user-phone"
+          name="modal-user-email"
           required
-          pattern="[0-9]{10}"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="Your email"
         />
-        <span class="input-label">Phone</span>
+        <span class="input-label">Email</span>
         <svg class="input-warning-icon" width="14" height="14">
           <use class="error" href="./img/icons.svg#icon-error"></use>
           <use class="correct" href="./img/icons.svg#icon-correct"></use>
