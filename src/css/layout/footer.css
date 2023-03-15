@@ -1,7 +1,14 @@
-.container-footer {
+.ft-section{
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: var(--secondary-bgc-page);
+}
+
+.ft-container {
   display: flex;
   position: relative;
-  padding: 72px 24px;
+  padding-right: 48px;
+  padding-left: 24px;
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -10,7 +17,6 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--secondary-txt-cl);
-  background-color: var(--secondary-bgc-page);
 }
 
 .ft-list-title {
@@ -39,7 +45,7 @@ flex-grow: 1;
   gap: 24px;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 700px;
+  max-width: 688px;
   margin: auto;
 }
 .ft-nav-links-section,
@@ -56,13 +62,19 @@ flex-grow: 1;
   gap: 12px;
 }
 
-.ft-contacts-list,
-.ft-socials-list,
-.ft-socials-icon {
+.ft-contacts-list{
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
+.ft-socials-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  gap: 18px;
+}
+
 @media screen and (max-width: 768px) {
   .ft-nav-links-section,
   .ft-open-hours-section,
@@ -74,18 +86,19 @@ flex-grow: 1;
     font-size: 18px;
     line-height: calc(22 / 18);
   }
-  .container-footer {
+  .ft-container {
     font-size: 14px;
     line-height: calc(17 / 14);
     padding: 32px 16px;
   }
   .ft-right-side {
     position: absolute;
-    right: 80px;
-    bottom: 152px;
+    right: 74px;
+    bottom: 153px;
   }
   .ft-socials-list {
     flex-direction: row;
+    gap: 14px;
   }
   .ft-email {
     max-width: 110px;
