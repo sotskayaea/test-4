@@ -1,6 +1,6 @@
 const lightbox = new SimpleLightbox('.gallery a', {
-    captionDelay: 250,
-    captionsData: 'alt',
+  captionDelay: 250,
+  captionsData: 'alt',
 });
 
 // https://simplelightbox.com/
