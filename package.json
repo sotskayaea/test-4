@@ -1,11 +1,11 @@
 {
-  "name": "anemone-flowers",
+  "name": "test-4",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/anemone-flowers/",
+    "build": "vite build --base=/test-4/",
     "preview": "vite preview"
   },
   "devDependencies": {
