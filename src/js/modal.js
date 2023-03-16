@@ -1,0 +1,1 @@
+const getImgUrl = (imageNameWithExtension) => new URL(`./img/${imageNameWithExtension}`, import.meta.url).href;
